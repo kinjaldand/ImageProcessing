@@ -4,7 +4,10 @@
 #import Week1.SpatialAvg as sa
 #sa.CallMe()
 
-import Week1.ReduceSpatialDomain as sa
+#import Week1.ReduceSpatialDomain as sa
+#sa.CallMe()
+
+import Week1.RotateImg as sa
 sa.CallMe()
 
 

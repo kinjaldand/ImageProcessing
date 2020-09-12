@@ -13,7 +13,12 @@ import cv2
 from PIL import Image
 import numpy as np
 import MyUtils as mu
+from scipy import ndimage
 
+def rotate_img(img,angle):
+    #rotation angle in degree
+    rotated = ndimage.rotate(img, angle)
+    return rotated
 
 def convert_image_to_gray(img):
     img = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
